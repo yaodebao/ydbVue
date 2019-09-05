@@ -59,12 +59,12 @@
 <script>
   import debounce from 'throttle-debounce/debounce';
   import ytInput from '../../input';
-  import Clickoutside from '@/utils/clickoutside';
+  import Clickoutside from '../../../../YTJS/utils/clickoutside';
   import ytAutocompleteSuggestions from './autocomplete-suggestions.vue';
-  import Emitter from '@/mixins/emitter';
-  import Migrating from '@/mixins/migrating';
-  import { generateId } from '@/utils/util';
-  import Focus from '@/mixins/focus';
+  import Emitter from '../../../../YTJS/mixins/emitter';
+  import Migrating from '../../../../YTJS/mixins/migrating';
+  import { generateId } from '../../../../YTJS/utils/util';
+  import Focus from '../../../../YTJS/mixins/focus';
 
   export default {
     name: 'ytAutocomplete',

@@ -133,22 +133,22 @@
 </template>
 
 <script type="text/babel">
-  import Emitter from '@/mixins/emitter';
-  import Focus from '@/mixins/focus';
-  import Locale from '@/mixins/locale';
+  import Emitter from '../../../../YTJS/mixins/emitter';
+  import Focus from '../../../../YTJS/mixins/focus';
+  import Locale from '../../../../YTJS/mixins/locale';
   import ytInput from '../../input';
   import ytSelectMenu from './select-dropdown.vue';
   import ytOption from './option.vue';
   import ytTag from '../../tag';
   import ytScrollbar from '../../scrollbar';
   import debounce from 'throttle-debounce/debounce';
-  import Clickoutside from '@/utils/clickoutside';
-  import { addResizeListener, removeResizeListener } from '@/utils/resize-event';
-  import { t } from '@/locale';
-  import scrollIntoView from '@/utils/scroll-into-view';
-  import { getValueByPath, valueEquals, isIE, isEdge } from '@/utils/util';
+  import Clickoutside from '../../../../YTJS/utils/clickoutside';
+  import { addResizeListener, removeResizeListener } from '../../../../YTJS/utils/resize-event';
+  import { t } from '../../../../YTJS/locale';
+  import scrollIntoView from '../../../../YTJS/utils/scroll-into-view';
+  import { getValueByPath, valueEquals, isIE, isEdge } from '../../../../YTJS/utils/util';
   import NavigationMixin from './navigation-mixin';
-  import { isKorean } from '@/utils/shared';
+  import { isKorean } from '../../../../YTJS/utils/shared';
 
   export default {
     mixins: [Emitter, Locale, Focus('reference'), NavigationMixin],
