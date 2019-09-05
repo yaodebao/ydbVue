@@ -1,9 +1,9 @@
 {
   "name": "yitong-ui",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "A Component Library for Vue.js",
   "author": "yaodebao",
-  "main": "src/packages/index.js",
+  "main": "packages/index.js",
   "private": false,
 "repository": {
 	"type": "git",

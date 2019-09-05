@@ -1,9 +1,9 @@
-import { kebabCase } from '@/utils/util';
+import { kebabCase } from 'yitong-ui/src/utils/util';
 /**
  * Show migrating guide in browser console.
  *
  * Usage:
- * import Migrating from '@/mixins/migrating';
+ * import Migrating from 'yitong-ui/src/mixins/migrating';
  *
  * mixins: [Migrating]
  *

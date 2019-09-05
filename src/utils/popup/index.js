@@ -1,6 +1,6 @@
 import Vue from 'vue';
-import merge from '@/utils/merge';
-import PopupManager from '@/utils/popup/popup-manager';
+import merge from 'yitong-ui/src/utils/merge';
+import PopupManager from 'yitong-ui/src/utils/popup/popup-manager';
 import getScrollBarWidth from '../scrollbar-width';
 import { getStyle, addClass, removeClass, hasClass } from '../dom';
 
