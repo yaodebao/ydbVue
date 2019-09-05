@@ -3,7 +3,7 @@
   "version": "1.0.6",
   "description": "A Component Library for Vue.js",
   "author": "yaodebao",
-  "main": "packages/index.js",
+  "main": "src/packages/index.js",
   "private": false,
 "repository": {
 	"type": "git",
