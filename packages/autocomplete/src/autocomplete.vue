@@ -59,12 +59,12 @@
 <script>
   import debounce from 'throttle-debounce/debounce';
   import ytInput from '../../input';
-  import Clickoutside from 'yitong-ui/packages/utils/clickoutside';
+  import Clickoutside from '@/utils/clickoutside';
   import ytAutocompleteSuggestions from './autocomplete-suggestions.vue';
-  import Emitter from 'yitong-ui/packages/mixins/emitter';
-  import Migrating from 'yitong-ui/packages/mixins/migrating';
-  import { generateId } from 'yitong-ui/packages/utils/util';
-  import Focus from 'yitong-ui/packages/mixins/focus';
+  import Emitter from '@/mixins/emitter';
+  import Migrating from '@/mixins/migrating';
+  import { generateId } from '@/utils/util';
+  import Focus from '@/mixins/focus';
 
   export default {
     name: 'ytAutocomplete',

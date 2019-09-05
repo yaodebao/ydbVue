@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import {
   PopupManager
-} from 'yitong-ui/src/utils/popup';
+} from '@/utils/popup';
 const PopperJS = Vue.prototype.$isServer ? function() {} : require('./popper');
 console.log("PopperJS",PopperJS)
 const stop = e => e.stopPropagation();

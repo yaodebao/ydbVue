@@ -1,4 +1,4 @@
-import { t } from 'yitong-ui/src/locale';
+import { t } from '@/locale';
 
 export default {
   methods: {

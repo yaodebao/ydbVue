@@ -9,7 +9,7 @@
   </component>
 </template>
 <script>
-  import Emitter from 'yitong-ui/packages/mixins/emitter';
+  import Emitter from '@/mixins/emitter';
 
   const keyCode = Object.freeze({
     LEFT: 37,

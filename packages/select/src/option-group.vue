@@ -10,7 +10,7 @@
 </template>
 
 <script type="text/babel">
-  import Emitter from 'yitong-ui/packages/mixins/emitter';
+  import Emitter from '@/mixins/emitter';
 
   export default {
     mixins: [Emitter],

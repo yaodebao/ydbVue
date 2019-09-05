@@ -1,5 +1,5 @@
 import Vue from 'vue';
-import { isString, isObject } from 'yitong-ui/src/utils/types';
+import { isString, isObject } from '@/utils/types';
 
 const hasOwnProperty = Object.prototype.hasOwnProperty;
 

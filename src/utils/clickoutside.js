@@ -1,5 +1,5 @@
 import Vue from 'vue';
-import { on } from 'yitong-ui/src/utils/dom';
+import { on } from '@/utils/dom';
 
 const nodeList = [];
 const ctx = '@@clickoutsideContext';

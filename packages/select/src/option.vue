@@ -16,8 +16,8 @@
 </template>
 
 <script type="text/babel">
-  import Emitter from 'yitong-ui/packages/mixins/emitter';
-  import { getValueByPath, escapeRegexpString } from 'yitong-ui/packages/utils/util';
+  import Emitter from '@/mixins/emitter';
+  import { getValueByPath, escapeRegexpString } from '@/utils/util';
 
   export default {
     mixins: [Emitter],

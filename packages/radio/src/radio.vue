@@ -43,7 +43,7 @@
   </label>
 </template>
 <script>
-  import Emitter from 'yitong-ui/packages/mixins/emitter';
+  import Emitter from '@/mixins/emitter';
 
   export default {
     name: 'ytRadio',

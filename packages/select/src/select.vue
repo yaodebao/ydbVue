@@ -133,22 +133,22 @@
 </template>
 
 <script type="text/babel">
-  import Emitter from 'yitong-ui/packages/mixins/emitter';
-  import Focus from 'yitong-ui/packages/mixins/focus';
-  import Locale from 'yitong-ui/packages/mixins/locale';
+  import Emitter from '@/mixins/emitter';
+  import Focus from '@/mixins/focus';
+  import Locale from '@/mixins/locale';
   import ytInput from '../../input';
   import ytSelectMenu from './select-dropdown.vue';
   import ytOption from './option.vue';
   import ytTag from '../../tag';
   import ytScrollbar from '../../scrollbar';
   import debounce from 'throttle-debounce/debounce';
-  import Clickoutside from 'yitong-ui/packages/utils/clickoutside';
-  import { addResizeListener, removeResizeListener } from 'yitong-ui/packages/utils/resize-event';
-  import { t } from 'yitong-ui/packages/locale';
-  import scrollIntoView from 'yitong-ui/packages/utils/scroll-into-view';
-  import { getValueByPath, valueEquals, isIE, isEdge } from 'yitong-ui/packages/utils/util';
+  import Clickoutside from '@/utils/clickoutside';
+  import { addResizeListener, removeResizeListener } from '@/utils/resize-event';
+  import { t } from '@/locale';
+  import scrollIntoView from '@/utils/scroll-into-view';
+  import { getValueByPath, valueEquals, isIE, isEdge } from '@/utils/util';
   import NavigationMixin from './navigation-mixin';
-  import { isKorean } from 'yitong-ui/packages/utils/shared';
+  import { isKorean } from '@/utils/shared';
 
   export default {
     mixins: [Emitter, Locale, Focus('reference'), NavigationMixin],
