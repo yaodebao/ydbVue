@@ -17,11 +17,13 @@ const resizeHandler = function(entries) {
 /* istanbul ignore next */
 export const addResizeListener = function(element, fn) {
   if (isServer) return;
-  if (!element.__resizeListeners__) {
+  if(!element) return false;
+  if (!element.__resizeListeners__&&element) {
     element.__resizeListeners__ = [];
     element.__ro__ = new ResizeObserver(resizeHandler);
     element.__ro__.observe(element);
   }
+
   element.__resizeListeners__.push(fn);
 };
 

@@ -6,8 +6,8 @@ import 'vue2-animate/dist/vue2-animate.min.css'
 import '@/assets/styl/index.scss'; //导入基本样式
 import demoBlock from '@/components/demo-block.vue'//高亮代码块组件
 
-import './packages/theme-set/lib/index.css' //导入UI样式
-import YTUI from './packages/index'
+import '../packages/theme-set/lib/index.css' //导入UI样式
+import YTUI from '../packages/index'
 
 // import $ from 'jquery'
 

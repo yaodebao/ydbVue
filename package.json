@@ -1,9 +1,9 @@
 {
   "name": "yitong-ui",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "A Component Library for Vue.js",
   "author": "yaodebao",
-  "main": "src/packages/index.js",
+  "main": "packages/index.js",
   "private": false,
 "repository": {
 	"type": "git",
@@ -19,12 +19,10 @@
     "vue": "^2.5.2",
     "vue-loader": "^13.3.0",
     "vue-router": "^3.0.1",
-    "async-validator": "~1.8.1",
-    "babel-helper-vue-jsx-merge-props": "^2.0.0",
-    "deepmerge": "^1.2.0",
     "normalize-wheel": "^1.0.1",
     "resize-observer-polyfill": "^1.5.0",
-    "throttle-debounce": "^1.0.1"
+    "throttle-debounce": "^1.0.1",
+    "deepmerge": "^1.2.0"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
