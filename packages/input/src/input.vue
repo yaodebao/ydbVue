@@ -108,11 +108,11 @@
   </div>
 </template>
 <script>
-  import emitter from '@/mixins/emitter';
-  import Migrating from '@/mixins/migrating';
+  import emitter from 'yitong-ui/packages/mixins/emitter';
+  import Migrating from 'yitong-ui/packages/mixins/migrating';
   import calcTextareaHeight from './calcTextareaHeight';
-  import merge from '@/utils/merge';
-  import {isKorean} from '@/utils/shared';
+  import merge from 'yitong-ui/packages/utils/merge';
+  import {isKorean} from 'yitong-ui/packages/utils/shared';
 
   export default {
     name: 'ytInput',

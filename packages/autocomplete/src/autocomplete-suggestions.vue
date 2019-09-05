@@ -18,8 +18,8 @@
   </transition>
 </template>
 <script>
-  import Popper from '@/utils/vue-popper';
-  import Emitter from '@/mixins/emitter';
+  import Popper from 'yitong-ui/packages/utils/vue-popper';
+  import Emitter from 'yitong-ui/packages/mixins/emitter';
   import ElScrollbar from '../../scrollbar';
 
   export default {

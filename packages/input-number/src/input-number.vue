@@ -47,8 +47,8 @@
 </template>
 <script>
   import ytInput from '../../input';
-  import Focus from '@/mixins/focus';
-  import RepeatClick from '@/directives/repeat-click';
+  import Focus from 'yitong-ui/packages/mixins/focus';
+  import RepeatClick from 'yitong-ui/packages/directives/repeat-click';
 
   export default {
     name: 'ytInputNumber',
