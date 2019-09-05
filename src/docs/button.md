@@ -1,8 +1,7 @@
-<style lang="stylus" scoped>
+<style lang="scss" scoped>
   .demo-block {
     >div {
       margin-bottom: 20px;
-      
       &:last-child {
         margin-bottom: 0;
       }
@@ -21,39 +20,39 @@
 
 <div class="demo-block">
   <div>
-    <h-button>默认按钮</h-button>
-    <h-button type="primary">主要按钮</h-button>
-    <h-button type="success">成功按钮</h-button>
-    <h-button type="info">信息按钮</h-button>
-    <h-button type="warning">警告按钮</h-button>
-    <h-button type="danger">危险按钮</h-button>
+    <yt-button>默认按钮</yt-button>
+    <yt-button type="primary">主要按钮</yt-button>
+    <yt-button type="success">成功按钮</yt-button>
+    <yt-button type="info">信息按钮</yt-button>
+    <yt-button type="warning">警告按钮</yt-button>
+    <yt-button type="danger">危险按钮</yt-button>
   </div>
   
   <div>
-    <h-button plain>朴素按钮</h-button>
-    <h-button type="primary" plain>主要按钮</h-button>
-    <h-button type="success" plain>成功按钮</h-button>
-    <h-button type="info" plain>信息按钮</h-button>
-    <h-button type="warning" plain>警告按钮</h-button>
-    <h-button type="danger" plain>危险按钮</h-button>
+    <yt-button plain>朴素按钮</yt-button>
+    <yt-button type="primary" plain>主要按钮</yt-button>
+    <yt-button type="success" plain>成功按钮</yt-button>
+    <yt-button type="info" plain>信息按钮</yt-button>
+    <yt-button type="warning" plain>警告按钮</yt-button>
+    <yt-button type="danger" plain>危险按钮</yt-button>
   </div>
   
   <div>
-    <h-button round>圆角按钮</h-button>
-    <h-button type="primary" round>主要按钮</h-button>
-    <h-button type="success" round>成功按钮</h-button>
-    <h-button type="info" round>信息按钮</h-button>
-    <h-button type="warning" round>警告按钮</h-button>
-    <h-button type="danger" round>危险按钮</h-button>
+    <yt-button round>圆角按钮</yt-button>
+    <yt-button type="primary" round>主要按钮</yt-button>
+    <yt-button type="success" round>成功按钮</yt-button>
+    <yt-button type="info" round>信息按钮</yt-button>
+    <yt-button type="warning" round>警告按钮</yt-button>
+    <yt-button type="danger" round>危险按钮</yt-button>
   </div>
   
   <div>
-    <h-button icon="h-icon-app" circle></h-button>
-    <h-button type="primary" icon="h-icon-sql" circle></h-button>
-    <h-button type="success" icon="h-icon-text" circle></h-button>
-    <h-button type="info" icon="h-icon-addition" circle></h-button>
-    <h-button type="warning" icon="h-icon-addition" circle></h-button>
-    <h-button type="danger" icon="h-icon-addition" circle></h-button>
+    <yt-button icon="yt-icon-app" circle></yt-button>
+    <yt-button type="primary" icon="yt-icon-sql" circle></yt-button>
+    <yt-button type="success" icon="yt-icon-text" circle></yt-button>
+    <yt-button type="info" icon="yt-icon-addition" circle></yt-button>
+    <yt-button type="warning" icon="yt-icon-addition" circle></yt-button>
+    <yt-button type="danger" icon="yt-icon-addition" circle></yt-button>
   </div>
 </div>
 
@@ -63,39 +62,39 @@
 
 ```html
   <div>
-    <h-button>默认按钮</h-button>
-    <h-button type="primary">主要按钮</h-button>
-    <h-button type="success">成功按钮</h-button>
-    <h-button type="info">信息按钮</h-button>
-    <h-button type="warning">警告按钮</h-button>
-    <h-button type="danger">危险按钮</h-button>
+    <yt-button>默认按钮</yt-button>
+    <yt-button type="primary">主要按钮</yt-button>
+    <yt-button type="success">成功按钮</yt-button>
+    <yt-button type="info">信息按钮</yt-button>
+    <yt-button type="warning">警告按钮</yt-button>
+    <yt-button type="danger">危险按钮</yt-button>
   </div>
   
   <div>
-    <h-button plain>朴素按钮</h-button>
-    <h-button type="primary" plain>主要按钮</h-button>
-    <h-button type="success" plain>成功按钮</h-button>
-    <h-button type="info" plain>信息按钮</h-button>
-    <h-button type="warning" plain>警告按钮</h-button>
-    <h-button type="danger" plain>危险按钮</h-button>
+    <yt-button plain>朴素按钮</yt-button>
+    <yt-button type="primary" plain>主要按钮</yt-button>
+    <yt-button type="success" plain>成功按钮</yt-button>
+    <yt-button type="info" plain>信息按钮</yt-button>
+    <yt-button type="warning" plain>警告按钮</yt-button>
+    <yt-button type="danger" plain>危险按钮</yt-button>
   </div>
   
   <div>
-    <h-button round>圆角按钮</h-button>
-    <h-button type="primary" round>主要按钮</h-button>
-    <h-button type="success" round>成功按钮</h-button>
-    <h-button type="info" round>信息按钮</h-button>
-    <h-button type="warning" round>警告按钮</h-button>
-    <h-button type="danger" round>危险按钮</h-button>
+    <yt-button round>圆角按钮</yt-button>
+    <yt-button type="primary" round>主要按钮</yt-button>
+    <yt-button type="success" round>成功按钮</yt-button>
+    <yt-button type="info" round>信息按钮</yt-button>
+    <yt-button type="warning" round>警告按钮</yt-button>
+    <yt-button type="danger" round>危险按钮</yt-button>
   </div>
   
   <div>
-    <h-button icon="h-icon-app" circle></h-button>
-    <h-button type="primary" icon="h-icon-sql" circle></h-button>
-    <h-button type="success" icon="h-icon-text" circle></h-button>
-    <h-button type="info" icon="h-icon-addition" circle></h-button>
-    <h-button type="warning" icon="h-icon-addition" circle></h-button>
-    <h-button type="danger" icon="h-icon-addition" circle></h-button>
+    <yt-button icon="yt-icon-app" circle></yt-button>
+    <yt-button type="primary" icon="yt-icon-sql" circle></yt-button>
+    <yt-button type="success" icon="yt-icon-text" circle></yt-button>
+    <yt-button type="info" icon="yt-icon-addition" circle></yt-button>
+    <yt-button type="warning" icon="yt-icon-addition" circle></yt-button>
+    <yt-button type="danger" icon="yt-icon-addition" circle></yt-button>
   </div>
 
 ```
@@ -106,21 +105,21 @@
 - 按钮不可用状态。
 <div class="demo-block">
    <div>
-     <h-button disabled>默认按钮</h-button>
-     <h-button type="primary" disabled>主要按钮</h-button>
-     <h-button type="success" disabled>成功按钮</h-button>
-     <h-button type="info" disabled>信息按钮</h-button>
-     <h-button type="warning" disabled>警告按钮</h-button>
-     <h-button type="danger" disabled>危险按钮</h-button>
+     <yt-button disabled>默认按钮</yt-button>
+     <yt-button type="primary" disabled>主要按钮</yt-button>
+     <yt-button type="success" disabled>成功按钮</yt-button>
+     <yt-button type="info" disabled>信息按钮</yt-button>
+     <yt-button type="warning" disabled>警告按钮</yt-button>
+     <yt-button type="danger" disabled>危险按钮</yt-button>
    </div>
    
    <div>
-     <h-button plain disabled>朴素按钮</h-button>
-     <h-button type="primary" plain disabled>主要按钮</h-button>
-     <h-button type="success" plain disabled>成功按钮</h-button>
-     <h-button type="info" plain disabled>信息按钮</h-button>
-     <h-button type="warning" plain disabled>警告按钮</h-button>
-     <h-button type="danger" plain disabled>危险按钮</h-button>
+     <yt-button plain disabled>朴素按钮</yt-button>
+     <yt-button type="primary" plain disabled>主要按钮</yt-button>
+     <yt-button type="success" plain disabled>成功按钮</yt-button>
+     <yt-button type="info" plain disabled>信息按钮</yt-button>
+     <yt-button type="warning" plain disabled>警告按钮</yt-button>
+     <yt-button type="danger" plain disabled>危险按钮</yt-button>
    </div>
 </div>
 
@@ -128,21 +127,21 @@
 
 ```html
 <div>
-  <h-button disabled>默认按钮</h-button>
-  <h-button type="primary" disabled>主要按钮</h-button>
-  <h-button type="success" disabled>成功按钮</h-button>
-  <h-button type="info" disabled>信息按钮</h-button>
-  <h-button type="warning" disabled>警告按钮</h-button>
-  <h-button type="danger" disabled>危险按钮</h-button>
+  <yt-button disabled>默认按钮</yt-button>
+  <yt-button type="primary" disabled>主要按钮</yt-button>
+  <yt-button type="success" disabled>成功按钮</yt-button>
+  <yt-button type="info" disabled>信息按钮</yt-button>
+  <yt-button type="warning" disabled>警告按钮</yt-button>
+  <yt-button type="danger" disabled>危险按钮</yt-button>
 </div>
 
 <div>
-  <h-button plain disabled>朴素按钮</h-button>
-  <h-button type="primary" plain disabled>主要按钮</h-button>
-  <h-button type="success" plain disabled>成功按钮</h-button>
-  <h-button type="info" plain disabled>信息按钮</h-button>
-  <h-button type="warning" plain disabled>警告按钮</h-button>
-  <h-button type="danger" plain disabled>危险按钮</h-button>
+  <yt-button plain disabled>朴素按钮</yt-button>
+  <yt-button type="primary" plain disabled>主要按钮</yt-button>
+  <yt-button type="success" plain disabled>成功按钮</yt-button>
+  <yt-button type="info" plain disabled>信息按钮</yt-button>
+  <yt-button type="warning" plain disabled>警告按钮</yt-button>
+  <yt-button type="danger" plain disabled>危险按钮</yt-button>
 </div>
 ```
 :::
@@ -152,14 +151,14 @@
 没有边框和背景色的按钮。
 
 <div class="demo-block">
-  <h-button type="text">文字按钮</h-button>
-  <h-button type="text" disabled>文字按钮</h-button>
+  <yt-button type="text">文字按钮</yt-button>
+  <yt-button type="text" disabled>文字按钮</yt-button>
 </div>
 
 :::demo
 ```html
-<h-button type="text">文字按钮</h-button>
-<h-button type="text" disabled>文字按钮</h-button>
+<yt-button type="text">文字按钮</yt-button>
+<yt-button type="text" disabled>文字按钮</yt-button>
 ```
 :::
 
@@ -169,20 +168,20 @@
 - 设置`icon`属性即可，icon 的列表可以参考 Element 的 icon 组件，也可以设置在文字右边的 icon ，只要使用`i`标签即可，可以使用自定义图标。
 
 <div class="demo-block">
-  <h-button type="primary" icon="h-icon-addition"></h-button>
-  <h-button type="primary" icon="h-icon-addition"></h-button>
-  <h-button type="primary" icon="h-icon-addition"></h-button>
-  <h-button type="primary" icon="h-icon-addition">搜索</h-button>
-  <h-button type="primary">上传<i class="h-icon-addition"></i></h-button>
+  <yt-button type="primary" icon="yt-icon-addition"></yt-button>
+  <yt-button type="primary" icon="yt-icon-addition"></yt-button>
+  <yt-button type="primary" icon="yt-icon-addition"></yt-button>
+  <yt-button type="primary" icon="yt-icon-addition">搜索</yt-button>
+  <yt-button type="primary">上传<i class="yt-icon-addition"></i></yt-button>
 </div>
 
 :::demo 
 ```html
-<h-button type="primary" icon="h-icon-addition"></h-button>
-<h-button type="primary" icon="h-icon-addition"></h-button>
-<h-button type="primary" icon="h-icon-addition"></h-button>
-<h-button type="primary" icon="h-icon-addition">搜索</h-button>
-<h-button type="primary">上传<i class="h-icon-addition"></i></h-button>
+<yt-button type="primary" icon="yt-icon-addition"></yt-button>
+<yt-button type="primary" icon="yt-icon-addition"></yt-button>
+<yt-button type="primary" icon="yt-icon-addition"></yt-button>
+<yt-button type="primary" icon="yt-icon-addition">搜索</yt-button>
+<yt-button type="primary">上传<i class="yt-icon-addition"></i></yt-button>
 ```
 :::
 
@@ -193,32 +192,32 @@
 
 <div class="demo-block">
   <div>
-    <h-button>默认按钮</h-button>
-    <h-button size="medium">中等按钮</h-button>
-    <h-button size="small">小型按钮</h-button>
-    <h-button size="mini">超小按钮</h-button>
+    <yt-button>默认按钮</yt-button>
+    <yt-button size="medium">中等按钮</yt-button>
+    <yt-button size="small">小型按钮</yt-button>
+    <yt-button size="mini">超小按钮</yt-button>
   </div>
   <div>
-    <h-button round>默认按钮</h-button>
-    <h-button size="medium" round>中等按钮</h-button>
-    <h-button size="small" round>小型按钮</h-button>
-    <h-button size="mini" round>超小按钮</h-button>
+    <yt-button round>默认按钮</yt-button>
+    <yt-button size="medium" round>中等按钮</yt-button>
+    <yt-button size="small" round>小型按钮</yt-button>
+    <yt-button size="mini" round>超小按钮</yt-button>
   </div>
 </div>
 
 :::demo 
 ```html
 <div>
-  <h-button>默认按钮</h-button>
-  <h-button size="medium">中等按钮</h-button>
-  <h-button size="small">小型按钮</h-button>
-  <h-button size="mini">超小按钮</h-button>
+  <yt-button>默认按钮</yt-button>
+  <yt-button size="medium">中等按钮</yt-button>
+  <yt-button size="small">小型按钮</yt-button>
+  <yt-button size="mini">超小按钮</yt-button>
 </div>
 <div>
-  <h-button round>默认按钮</h-button>
-  <h-button size="medium" round>中等按钮</h-button>
-  <h-button size="small" round>小型按钮</h-button>
-  <h-button size="mini" round>超小按钮</h-button>
+  <yt-button round>默认按钮</yt-button>
+  <yt-button size="medium" round>中等按钮</yt-button>
+  <yt-button size="small" round>小型按钮</yt-button>
+  <yt-button size="mini" round>超小按钮</yt-button>
 </div>
 ```
 :::

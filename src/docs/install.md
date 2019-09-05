@@ -1,12 +1,10 @@
-# 安装 o(*￣︶￣*)o
+# 安装 
 
 ----
 
 ## 使用 npm 安装
-凑个页数啦~~
-
 ```bash
-npm install hai-ui --save
+npm install YT-ui --save
 ```
 
 

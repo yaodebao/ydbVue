@@ -1,0 +1,102 @@
+
+@charset "UTF-8";
+@import "./common/var.css";
+
+[class*="yt-col-"] {
+  float: left;
+  box-sizing: border-box;
+}
+.yt-col-0 {
+  width: 0;
+}
+
+@for $i from 0 through 24 {
+  .yt-col-#{$i} {
+    width: (1 / 24 * $i * 100) * 1%;
+  }
+  .yt-col-offset-#{$i} {
+    margin-left: (1 / 24 * $i * 100) * 1%;
+  }
+  .yt-col-pull-#{$i} {
+    position: relative;
+    right: (1 / 24 * $i * 100) * 1%;
+  }
+  .yt-col-push-#{$i} {
+    position: relative;
+    left: (1 / 24 * $i * 100) * 1%;
+  }
+}
+
+@media (max-width: 768px) {
+  @for $i from 0 through 24 {
+    .yt-col-xs-#{$i} {
+      width: (1 / 24 * $i * 100) * 1%;
+    }
+    .yt-col-xs-offset-#{$i} {
+      margin-left: (1 / 24 * $i * 100) * 1%;
+    }
+    .yt-col-xs-pull-#{$i} {
+      position: relative;
+      right: (1 / 24 * $i * 100) * 1%;
+    }
+    .yt-col-xs-push-#{$i} {
+      position: relative;
+      left: (1 / 24 * $i * 100) * 1%;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  @for $i from 0 through 24 {
+    .yt-col-sm-#{$i} {
+      width: (1 / 24 * $i * 100) * 1%;
+    }
+    .yt-col-sm-offset-#{$i} {
+      margin-left: (1 / 24 * $i * 100) * 1%;
+    }
+    .yt-col-sm-pull-#{$i} {
+      position: relative;
+      right: (1 / 24 * $i * 100) * 1%;
+    }
+    .yt-col-sm-push-#{$i} {
+      position: relative;
+      left: (1 / 24 * $i * 100) * 1%;
+    }
+  }
+}
+@media (min-width: 992px) {
+  @for $i from 0 through 24 {
+    .yt-col-md-#{$i} {
+      width: (1 / 24 * $i * 100) * 1%;
+    }
+    .yt-col-md-offset-#{$i} {
+      margin-left: (1 / 24 * $i * 100) * 1%;
+    }
+    .yt-col-md-pull-#{$i} {
+      position: relative;
+      right: (1 / 24 * $i * 100) * 1%;
+    }
+    .yt-col-md-push-#{$i} {
+      position: relative;
+      left: (1 / 24 * $i * 100) * 1%;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  @for $i from 0 through 24 {
+    .yt-col-lg-#{$i} {
+      width: (1 / 24 * $i * 100) * 1%;
+    }
+    .yt-col-lg-offset-#{$i} {
+      margin-left: (1 / 24 * $i * 100) * 1%;
+    }
+    .yt-col-lg-pull-#{$i} {
+      position: relative;
+      right: (1 / 24 * $i * 100) * 1%;
+    }
+    .yt-col-lg-push-#{$i} {
+      position: relative;
+      left: (1 / 24 * $i * 100) * 1%;
+    }
+  }
+}

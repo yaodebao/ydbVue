@@ -19,15 +19,17 @@
     }
   };
 </script>
-<style lang="stylus" scoped>
-  @import "../assets/styl/var.styl"
+<style lang="scss" scoped>
+  @import "../assets/styl/var.scss";
 
-  .container
+  .container{
     transition: max-height .3s ease;
     overflow: hidden;
+  }
+    
 
-  .docs
-    width: 100%;
+  .docs{
+   width: 100%;
     height: auto;
     box-sizing: border-box;
     font-size: 14px;
@@ -37,9 +39,11 @@
     padding: 0 20px;
     overflow-y: auto;
     display: block;
+  }
+    
 
-  .docs-trans
-    width: 100%;
+  .docs-trans{
+     width: 100%;
     text-align: center;
     display: inline-block;
     color: #73818c;
@@ -51,8 +55,12 @@
     border-left: 1px solid $color-border;
     border-bottom: 1px solid $color-border;
     border-right: 1px solid $color-border;
-    &:hover
-      color #0086b3
+    &:hover{
+     color: #0086b3;
+    }
+      
+  }
+   
 
 
 </style>

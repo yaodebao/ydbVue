@@ -114,10 +114,11 @@
     },
   }
 </script>
-<style scoped lang="stylus">
-  .focus2
-    padding 20px
-
+<style scoped lang="scss">
+  .focus2{
+   padding: 20px;
+  }
+    
   .links line {
     stroke: #999;
     stroke-opacity: 0.6;

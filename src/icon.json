@@ -55,7 +55,14 @@
   "icon-refresh",
   "icon-remind",
   "icon-return",
+  "icon-left",
   "icon-right",
+  "icon-up",
+  "icon-down",
+  "icon-left-fill",
+  "icon-right-fill",
+  "icon-up-fill",
+  "icon-down-fill",
   "icon-scan",
   "icon-select",
   "icon-send",
@@ -63,7 +70,11 @@
   "icon-setup",
   "icon-share_fill",
   "icon-share",
-  "icon-tailor",
   "icon-undo",
-  "icon-unlock"
+  "icon-unlock",
+  "icon-loading",
+  "icon-bank",
+  "icon-recv",
+  "icon-sendcv",
+  "icon-credit"
 ]

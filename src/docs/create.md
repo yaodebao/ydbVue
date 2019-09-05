@@ -1,4 +1,4 @@
-# 创建 o(*￣︶￣*)o
+# 创建 
 ----
 
 ### Vue
@@ -8,8 +8,8 @@
 
 ```bash
 > npm install vue-cli -g
-> vue init webpack hai-ui
-> cd hai-ui
+> vue init webpack YT-ui
+> cd YT-ui
 > npm i
 ```
 

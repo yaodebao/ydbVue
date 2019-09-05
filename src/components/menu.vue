@@ -29,19 +29,21 @@
     }
   }
 </script>
-<style lang="stylus" scoped>
-  @import "../assets/styl/var.styl"
-  .menu
+<style lang="scss" scoped>
+  @import "../assets/styl/var.scss";
+  .menu{
     display: inline-block;
     margin: 32px 0;
     padding: 0 10px;
     color: #3F536E;
     background-color: #fff;
     z-index: 99;
-    .group-container
-      margin-bottom: 15px;
-    .menu-title
-      font-size: 16px;
+    .group-container{
+         margin-bottom: 15px;
+    }
+      
+    .menu-title{
+     font-size: 16px;
       color: $color-primary;
       line-height: 40px;
       height: 40px;
@@ -52,30 +54,44 @@
       position: relative;
       transition: .15s ease-out;
       font-weight: 700;
-    .menu-items
+    }
+      
+    .menu-items{
       font-size: 15px;
       font-weight: normal;
       line-height: 1.8;
-      a
-        display: block;
+      a{
+       display: block;
         position: relative;
         padding: 8px 24px;
         color: #3F536E;
         font-weight: normal;
         line-height: 1.5;
         cursor: pointer;
-      .menu-group
-        padding: 4px 0 4px 16px;
+      }
+        
+      .menu-group{
+       padding: 4px 0 4px 16px;
         font-size: 15px;
-        color: lighten($color-primary, 30%);
+        color: lighten($color-text-regular, 10%);
         font-weight: 600;
-      .menu-component
-        display: block;
+      }
+        
+      .menu-component{
+       display: block;
         position: relative;
-        padding: 6px 24px 6px 32px;
+        padding: 6px 24px 6px 16px;
         color: #616367;
         font-size: 15px;
-      .active, a:hover
-        color: darken($color-primary, 50%);
-        font-weight 600
+      }
+        
+      .active, a:hover{
+        color: darken($color-primary, 10%);
+        font-weight: 600;
+      }
+        
+    }
+      
+  }
+    
 </style>

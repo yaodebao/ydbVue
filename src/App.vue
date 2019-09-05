@@ -23,18 +23,38 @@ export default {
 }
 </script>
 
-<style lang="stylus">
-#app
-  .app-main
+<style lang="scss">
+#app{
+    overflow: hidden;
+    height: 100%;
+  .app-main{
     display: flex;
     min-width: 1101px;
-    margin: 0 auto 50px auto;
-    width: 85%;
-    .app-main-left
-      min-width 230px
-      position relative
-    .app-main-right
-      position relative
-      padding-top 15px
-      flex 1
+    margin: 0 0 0 60px;
+    width: calc(100% - 60px);
+    height: calc(100% - 80px);
+    .app-main-left{
+      min-width: 230px;
+      position: relative;
+      overflow-y: auto;
+      &::-webkit-scrollbar{
+        width: 4px;
+        display: none;
+      }
+
+    }
+    .app-main-right{
+     position: relative;
+      padding-top: 15px;
+      flex: 1;
+      overflow-y: auto;
+      section{
+        padding-right:10px;
+      }
+    }
+      
+  }
+    
+}
+  
 </style>

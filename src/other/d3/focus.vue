@@ -210,7 +210,6 @@
           .attr("class", "node")
           .attr("cursor", "pointer")
           .on('click', (d)=> { //节点点击事件
-            debugger
             if (d3.event.ctrlKey) {
               if (d.selected) {
                 d.selected = false;
@@ -292,7 +291,6 @@
         this.svgNode = tempNode.merge(this.svgNode);
       },
       drawLink(l) {
-        debugger
         this.links.forEach(d => { //过滤已有关系线
           l.forEach(v => {
             if (v.id === d.id) {
@@ -306,7 +304,6 @@
             return d.id;
           });
 
-        debugger
         this.svgLink = tempLink.enter()
           .append('g')
           .attr('class', 'link')
@@ -347,11 +344,8 @@
           .html((d)=> {
             return d.text;
           });
-        debugger
 
         this.svgLink = tempLink.merge(this.svgLink);
-        debugger
-
       },
       tick() {
         if (this.svgNode) {
@@ -704,9 +698,11 @@
     }
   }
 </script>
-<style scoped lang="stylus">
-  .focus
-    padding 20px
+<style scoped lang="scss">
+  .focus{
+     padding: 20px;
+  }
+   
 
   .selectLink path {
     stroke: #09ddff !important;

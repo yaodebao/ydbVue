@@ -8,12 +8,16 @@
     }
   }
 </script>
-<style lang="stylus" scoped>
-  @import "../assets/styl/var.styl"
-  .demo-block
-    i
-     font-size:20px
-     margin-left:20px
+<style lang="scss" scoped>
+  @import "../assets/styl/var.scss";
+  .demo-block{
+       i{
+        font-size:20px;
+        margin-left:20px;
+       }
+     
+  }
+    
     
   .demo-icon .source > i {
     font-size: 24px;
@@ -63,27 +67,27 @@
 # Icon 图标
 
 ----
-```Hai-UI``` 使用开源的阿里 Iconfont 作为图标库，并制作成了 ```icon font```。
+```YT-UI``` 使用开源的阿里 Iconfont 作为图标库，并制作成了 ```icon font```。
 
 
 ### 使用
 
-使用 ```class="h-icon-?"``` 来声明图标，具体图标的名称请 ```copy``` 相应的标签
+使用 ```class="yt-icon-?"``` 来声明图标，具体图标的名称请 ```copy``` 相应的标签
 
 <div class="demo-block">
-  <i class="h-icon-app"></i>
-  <i class="h-icon-sql"></i>
-  <i class="h-icon-text"></i>
-  <i class="h-icon-addition"></i>
+  <i class="yt-icon-app"></i>
+  <i class="yt-icon-sql"></i>
+  <i class="yt-icon-text"></i>
+  <i class="yt-icon-addition"></i>
 </div>
 
 ::: demo
 ```html
 
-<i class="h-icon-app"></i>
-<i class="h-icon-sql"></i>
-<i class="h-icon-text"></i>
-<i class="h-icon-addition"></i>
+<i class="yt-icon-app"></i>
+<i class="yt-icon-sql"></i>
+<i class="yt-icon-text"></i>
+<i class="yt-icon-addition"></i>
 
 ```
 :::
@@ -93,8 +97,8 @@
 <ul class="icon-list">
   <li v-for="name in icons" :key="name">
     <span>
-      <i :class="'h-' + name"></i>
-      {{'h-' + name}}
+      <i :class="'yt-' + name"></i>
+      {{'yt-' + name}}
     </span>
   </li>
 </ul>

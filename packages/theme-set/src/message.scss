@@ -1,0 +1,155 @@
+@charset "UTF-8";
+@import "./common/var";
+
+$--message-width : 400px;
+$--message-height : 250px;
+
+.yt-message{
+  background: rgba(0, 0, 0, .5);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 99;
+  .yt-message__body{
+    width: $--message-width;
+    height: $--message-height;
+    box-sizing: border-box;
+    border-radius: $--border-radius-base;
+    border-width: $--border-width-base;
+    border-style: $--border-style-base;
+    border-color: $--border-color-lighter;
+    box-shadow: $--box-shadow-dark;
+    position: fixed;
+    left: 50%;
+    top :40%;
+    transform: translate(-50%, -50%);
+    background-color: #fff; //
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    > div{
+      width: 100%;
+      height: 100%;
+      position: relative;
+      padding: 30px;
+      text-align: center;
+    .yt-message__closeBtn.yt-icon-close{
+      position: absolute;
+      right: 14px;
+      top: 14px;
+      font-size: 20px;
+      color: $--color-info;
+      cursor: pointer;
+      &:hover{
+        color: $--color-black;
+      }
+        
+    }
+      
+    .yt-message__icon{
+      font-size: 130px;
+    }
+      
+    .yt-message__message{
+      font-size: 18px;
+      margin-top: 18px;
+      font-weight: bold;
+    }
+      
+    }
+     
+  }
+    
+}
+  
+
+.yt-message--info{
+  .yt-message__icon,
+  .yt-message__message{
+    color: $--color-info;
+  }
+}
+  
+    
+
+.yt-message--success{
+  .yt-message__icon,
+  .yt-message__message{
+    color: $--color-success;
+  }
+    
+}
+  
+
+.yt-message--warning{
+  .yt-message__icon,
+  .yt-message__message{
+    color: $--color-warning;
+  }
+   
+}
+  
+
+.yt-message--error{
+  .yt-message__icon,
+  .yt-message__message{
+    color: $--color-danger;
+  }
+}
+  
+.yt-message--info{
+  .yt-message__icon,
+  .yt-message__message{
+    color: $--color-info;
+  }
+    
+}
+  
+
+.yt-message--button{
+  .yt-message__message{
+    margin: 50px 0!important;
+  }
+    
+  .yt-button{
+    padding-left: 30px;
+    padding-right:  30px;
+  }
+    
+}
+  
+
+
+
+.yt-message-fade-enter-active {
+  animation: message-fade-in .3s;
+}
+
+.yt-message-fade-leave-active {
+  animation: message-fade-out .3s;
+}
+
+@keyframes message-fade-in {
+  0% {
+    transform: translate3d(0, -20px, 0);
+    opacity: 0;
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes message-fade-out {
+  0% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(0, -20px, 0);
+    opacity: 0;
+  }
+}
+

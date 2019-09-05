@@ -1,17 +1,16 @@
 # Message 消息提示
 
 ----
-- 这次有些不一样，点开看看吧 (#^.^#)
 
 ### 基础用法
 
 - UI 注册了一个`$message`方法用于调用。
 
 <div class="demo-block">
-  <h-button plain @click="open1">消息</h-button>
-  <h-button plain @click="open2">成功</h-button>
-  <h-button plain @click="open3">警告</h-button>
-  <h-button plain @click="open4">错误</h-button>
+  <yt-button plain @click="open1">消息</yt-button>
+  <yt-button plain @click="open2">成功</yt-button>
+  <yt-button plain @click="open3">警告</yt-button>
+  <yt-button plain @click="open4">错误</yt-button>
 </div>
 
 <script>
@@ -76,10 +75,10 @@
 
 ```html
 <template>
-  <h-button plain @click="open1">消息</h-button>
-  <h-button plain @click="open2">成功</h-button>
-  <h-button plain @click="open3">警告</h-button>
-  <h-button plain @click="open4">错误</h-button>
+  <yt-button plain @click="open1">消息</yt-button>
+  <yt-button plain @click="open2">成功</yt-button>
+  <yt-button plain @click="open3">警告</yt-button>
+  <yt-button plain @click="open4">错误</yt-button>
 </template>
 
 <script>
@@ -114,17 +113,17 @@
 ### 按钮状态
 - 可传入`isButton`参数及`buttonText`参数，该参数会覆盖`iconClass`，不显示图标，只显示传入文本或默认文本，并取消自动关闭。
 <div class="demo-block">
-  <h-button plain @click="open5">成功</h-button>
-  <h-button plain @click="open6">警告</h-button>
-  <h-button plain @click="open7">错误</h-button>
+  <yt-button plain @click="open5">成功</yt-button>
+  <yt-button plain @click="open6">警告</yt-button>
+  <yt-button plain @click="open7">错误</yt-button>
 </div>
 
 :::demo 
 ```html
 <template>
-  <h-button plain @click="open5">成功</h-button>
-  <h-button plain @click="open6">警告</h-button>
-  <h-button plain @click="open7">错误</h-button>
+  <yt-button plain @click="open5">成功</yt-button>
+  <yt-button plain @click="open6">警告</yt-button>
+  <yt-button plain @click="open7">错误</yt-button>
 </template>
 
 <script>
@@ -174,7 +173,7 @@ Vue.prototype 添加了全局方法 $message。因此在 vue instance 中可以�
 单独引入：
 
 ```javascript
-import { Message } from 'hai-ui';
+import { Message } from 'YT-ui';
 ```
 
 ### Options

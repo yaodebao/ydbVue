@@ -5,11 +5,11 @@
 ### 基本用法
 
 <div class="demo-block">
-  <h-carousel class="test-h-carousel">
-    <h-carousel-item v-for="item in 4" :key="item">
+  <yt-carousel class="test-h-carousel">
+    <yt-carousel-item v-for="item in 4" :key="item">
       <h3>{{ item }}</h3>
-    </h-carousel-item>
-  </h-carousel>
+    </yt-carousel-item>
+  </yt-carousel>
 </div>
 <style>
   .test-h-carousel {
@@ -35,11 +35,11 @@
 :::demo
 ```html
 <div class="demo-block">
-  <h-carousel class="test-h-carousel">
-    <h-carousel-item v-for="item in 4" :key="item">
+  <yt-carousel class="test-h-carousel">
+    <yt-carousel-item v-for="item in 4" :key="item">
       <h3>{{ item }}</h3>
-    </h-carousel-item>
-  </h-carousel>
+    </yt-carousel-item>
+  </yt-carousel>
 </div>
 <style>
   .test-h-carousel {

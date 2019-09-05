@@ -30,7 +30,44 @@
           "desc": "Button 按钮",
           "name": "button",
           "path": "/button"
+        },
+        {
+          "desc": "Layout 布局",
+          "name": "layout",
+          "path": "/layout"
         }
+      ]
+    },
+    {
+      "desc": "form",
+      "path": "/component",
+      "items": [
+        {
+          "desc": "input 输入框",
+          "name": "input",
+          "path": "/input"
+        },
+        {
+          "desc": "input-number 计数器",
+          "name": "input-number",
+          "path": "/input-number"
+        },
+        {
+          "desc": "radio 单选框",
+          "name": "radio",
+          "path": "/radio"
+        },
+        {
+          "desc": "checkbox 复选框",
+          "name": "checkbox",
+          "path": "/checkbox"
+        },
+        {
+          "desc": "select 下拉框",
+          "name": "select",
+          "path": "/select"
+        }
+
       ]
     },
     {
@@ -41,6 +78,17 @@
           "desc": "message 消息提示",
           "name": "message",
           "path": "/message"
+        }
+      ]
+    },
+    {
+      "desc": "data",
+      "path": "/component",
+      "items": [
+        {
+          "desc": "Tag 标签",
+          "name": "tag",
+          "path": "/tag"
         }
       ]
     },
