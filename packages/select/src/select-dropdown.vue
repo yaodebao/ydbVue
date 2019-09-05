@@ -8,7 +8,7 @@
 </template>
 
 <script type="text/babel">
-  import Popper from '@/utils/vue-popper';
+  import Popper from '../../../YTJS/utils/vue-popper';
 
   export default {
     name: 'ytSelectDropdown',

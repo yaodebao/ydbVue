@@ -9,7 +9,7 @@
   </component>
 </template>
 <script>
-  import Emitter from '@/mixins/emitter';
+  import Emitter from '../../../YTJS/mixins/emitter';
 
   const keyCode = Object.freeze({
     LEFT: 37,

@@ -108,11 +108,11 @@
   </div>
 </template>
 <script>
-  import emitter from '@/mixins/emitter';
-  import Migrating from '@/mixins/migrating';
+  import emitter from '../../../YTJS/mixins/emitter';
+  import Migrating from '../../../YTJS/mixins/migrating';
   import calcTextareaHeight from './calcTextareaHeight';
-  import merge from '@/utils/merge';
-  import {isKorean} from '@/utils/shared';
+  import merge from '../../../YTJS/utils/merge';
+  import {isKorean} from '../../../YTJS/utils/shared';
 
   export default {
     name: 'ytInput',

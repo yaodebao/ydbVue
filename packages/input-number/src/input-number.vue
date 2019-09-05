@@ -47,8 +47,8 @@
 </template>
 <script>
   import ytInput from '../../input';
-  import Focus from '@/mixins/focus';
-  import RepeatClick from '@/directives/repeat-click';
+  import Focus from '../../../YTJS/mixins/focus';
+  import RepeatClick from '../../../YTJS/directives/repeat-click';
 
   export default {
     name: 'ytInputNumber',

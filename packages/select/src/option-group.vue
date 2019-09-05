@@ -10,7 +10,7 @@
 </template>
 
 <script type="text/babel">
-  import Emitter from '@/mixins/emitter';
+  import Emitter from '../../../YTJS/mixins/emitter';
 
   export default {
     mixins: [Emitter],

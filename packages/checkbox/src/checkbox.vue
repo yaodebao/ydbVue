@@ -54,7 +54,7 @@
   </label>
 </template>
 <script>
-  import Emitter from '@/mixins/emitter';
+  import Emitter from '../../../YTJS/mixins/emitter';
 
   export default {
     name: 'ytCheckbox',

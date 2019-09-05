@@ -18,8 +18,8 @@
   </transition>
 </template>
 <script>
-  import Popper from '@/utils/vue-popper';
-  import Emitter from '@/mixins/emitter';
+  import Popper from '../../../YTJS/utils/vue-popper';
+  import Emitter from '../../../YTJS/mixins/emitter';
   import ElScrollbar from '../../scrollbar';
 
   export default {
