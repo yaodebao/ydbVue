@@ -66,8 +66,52 @@
           "desc": "select 下拉框",
           "name": "select",
           "path": "/select"
+        },
+        {
+          "desc": "cascader 联级下拉框",
+          "name": "cascader",
+          "path": "/cascader"
+        },
+        {
+          "desc": "switch 开关",
+          "name": "switch",
+          "path": "/switch"
+        },
+        {
+          "desc": "slider 滑块",
+          "name": "slider",
+          "path": "/slider"
+        },
+        {
+          "desc": "transfer 穿梭框",
+          "name": "transfer",
+          "path": "/transfer"
+        },
+        {
+          "desc": "date-picker 日期选择器",
+          "name": "date-picker",
+          "path": "/date-picker"
+        },
+        {
+          "desc": "time-picker 时间选择器",
+          "name": "time-picker",
+          "path": "/time-picker"
+        },
+        {
+          "desc": "datetime-picker 日期时间选择器",
+          "name": "datetime-picker",
+          "path": "/datetime-picker"
+        },
+        {
+          "desc": "upload 上传文件",
+          "name": "upload",
+          "path": "/upload"
+        },
+        {
+          "desc": "form 表单",
+          "name": "form",
+          "path": "/form"
         }
-
       ]
     },
     {
@@ -86,9 +130,19 @@
       "path": "/component",
       "items": [
         {
+          "desc": "table 表格",
+          "name": "table",
+          "path": "/table"
+        },
+        {
           "desc": "Tag 标签",
           "name": "tag",
           "path": "/tag"
+        },
+        {
+          "desc": "progress 进度条",
+          "name": "progress",
+          "path": "/progress"
         }
       ]
     },
@@ -103,32 +157,6 @@
         }
       ]
     }
-  ],
-  "笔记": [
-    {
-      "name": "test",
-      "path": "/test",
-      "type": "other"
-    },
-    {
-      "name": "create",
-      "path": "/create",
-      "desc": "项目创建"
-    },
-    {
-      "name": "markdown",
-      "path": "/markdown",
-      "desc": "Markdown"
-    },
-    {
-      "name": "theme",
-      "path": "/theme",
-      "desc": "样式管理"
-    },
-    {
-      "name": "iconfont",
-      "path": "/iconfont",
-      "desc": "Iconfont"
-    }
   ]
+  
 }

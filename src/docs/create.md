@@ -8,8 +8,8 @@
 
 ```bash
 > npm install vue-cli -g
-> vue init webpack YT-ui
-> cd YT-ui
+> vue init webpack yitong-ui
+> cd yitong-ui
 > npm i
 ```
 

@@ -1,7 +1,7 @@
 
 ----
 
-`YT-ui` 是一款基于 `Vue` ，参考了```element-ui``` 、`ant-design`
+`yitong-ui` 是一款基于 `Vue` ，参考了```element-ui``` 、`ant-design`
 
 ## 由来
 
@@ -11,4 +11,4 @@
 
 ## 问题
 
-在使用 `YT-ui` 时遇到问题，或者有好的建议，欢迎提出来！
+在使用 `yitong-ui` 时遇到问题，或者有好的建议，欢迎提出来！

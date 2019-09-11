@@ -23,7 +23,7 @@
     componentName: 'ytRadioGroup',
 
     inject: {
-      elFormItem: {
+      ytFormItem: {
         default: ''
       }
     },
@@ -40,7 +40,7 @@
 
     computed: {
       _elFormItemSize() {
-        return (this.elFormItem || {}).elFormItemSize;
+        return (this.ytFormItem || {}).ytFormItemSize;
       },
       _elTag() {
         return (this.$vnode.data || {}).tag || 'div';
@@ -103,7 +103,7 @@
     },
     watch: {
       value(value) {
-        this.dispatch('ElFormItem', 'el.form.change', [this.value]);
+        this.dispatch('ytFormItem', 'yt.form.change', [this.value]);
       }
     }
   };

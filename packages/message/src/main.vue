@@ -1,41 +1,35 @@
 <template>
-  <transition name="yt-message-fade">
-    <div class="yt-message" v-show="visible" @click="close">
-      <div
-        class="yt-message__body"
-        :class="[
+  <transition name="yt-message-fade" @after-leave="handleAfterLeave">
+    <div
+      :class="[
         'yt-message',
-        `yt-message--${ type }`,
-        customClass]"
-        v-show="visible"
-        @mouseenter="clearTimer"
-        @mouseleave="startTimer">
-        <div v-if="!isButton">
-          <i :class="iconClass" v-if="iconClass"></i>
-          <i :class="typeClass" v-else></i>
-          <i class="yt-message__closeBtn yt-icon-close"  @click="close"></i>
-          <div class="yt-message__message">
-            {{message}}
-          </div>
-        </div>
-        <div class="yt-message--button" v-else>
-          <div class="yt-message__message">
-            {{message}}
-          </div>
-          <yt-button :type="type === 'error' ? 'danger' : type" @click="close(buttonText[0])">{{buttonText[0]}}</yt-button>
-          <yt-button type="info" @click="close(buttonText[1])" plain>{{buttonText[1]}}</yt-button>
-        </div>
-      </div>
+        type && !iconClass ? `yt-message--${ type }` : '',
+        center ? 'is-center' : '',
+        showClose ? 'is-closable' : '',
+        customClass
+      ]"
+      :style="positionStyle"
+      v-show="visible"
+      @mouseenter="clearTimer"
+      @mouseleave="startTimer"
+      role="alert">
+      <i :class="iconClass" v-if="iconClass"></i>
+      <i :class="typeClass" v-else></i>
+      <slot>
+        <p v-if="!dangerouslyUseHTMLString" class="yt-message__content">{{ message }}</p>
+        <p v-else v-html="message" class="yt-message__content"></p>
+      </slot>
+      <i v-if="showClose" class="yt-message__closeBtn yt-icon-close" @click="close"></i>
     </div>
   </transition>
 </template>
 
 <script type="text/babel">
   const typeMap = {
-    success: 'emoji',
-    info: 'prompt',
-    warning: 'remind',
-    error: 'delete'
+    success: 'success',
+    info: 'info',
+    warning: 'warning',
+    error: 'error'
   };
 
   export default {
@@ -48,20 +42,25 @@
         iconClass: '',
         customClass: '',
         onClose: null,
-        showClose: true,
+        showClose: false,
         closed: false,
+        verticalOffset: 20,
         timer: null,
-        isButton: false,
-        buttonText: [],
-        buttonConfirm: null
+        dangerouslyUseHTMLString: false,
+        center: false
       };
     },
 
     computed: {
       typeClass() {
         return this.type && !this.iconClass
-          ? `yt-message__icon yt-icon-${typeMap[this.type]}`
+          ? `yt-message__icon yt-icon-${ typeMap[this.type] }`
           : '';
+      },
+      positionStyle() {
+        return {
+          'top': `${ this.verticalOffset }px`
+        };
       }
     },
 
@@ -69,22 +68,17 @@
       closed(newVal) {
         if (newVal) {
           this.visible = false;
-          this.$el.addEventListener('transitionend', this.destroyElement);
         }
       }
     },
 
     methods: {
-      destroyElement() {
-        this.$el.removeEventListener('transitionend', this.destroyElement);
+      handleAfterLeave() {
         this.$destroy(true);
         this.$el.parentNode.removeChild(this.$el);
       },
 
-      close(data) {
-        if (data) {
-          this.buttonConfirm = data;
-        }
+      close() {
         this.closed = true;
         if (typeof this.onClose === 'function') {
           this.onClose(this);
@@ -115,15 +109,6 @@
     mounted() {
       this.startTimer();
       document.addEventListener('keydown', this.keydown);
-      if (this.isButton) {
-        this.duration = 0;
-        if (this.buttonText && this.buttonText.length === 1) {
-          this.buttonText[1] = '取消';
-        } else if (!this.buttonText || !this.buttonText.length) {
-          this.buttonText[0] = '确定';
-          this.buttonText[1] = '取消';
-        }
-      }
     },
     beforeDestroy() {
       document.removeEventListener('keydown', this.keydown);

@@ -158,11 +158,11 @@
     componentName: 'ytSelect',
 
     inject: {
-      elForm: {
+      ytForm: {
         default: ''
       },
 
-      elFormItem: {
+      ytFormItem: {
         default: ''
       }
     },
@@ -175,7 +175,7 @@
 
     computed: {
       _elFormItemSize() {
-        return (this.elFormItem || {}).elFormItemSize;
+        return (this.ytFormItem || {}).ytFormItemSize;
       },
 
       readonly() {
@@ -227,7 +227,7 @@
       },
 
       selectDisabled() {
-        return this.disabled || (this.elForm || {}).disabled;
+        return this.disabled || (this.ytForm || {}).disabled;
       },
 
       collapseTagSize() {
@@ -360,7 +360,7 @@
           this.inputLength = 20;
         }
         if (!valueEquals(val, oldVal)) {
-          this.dispatch('ytFormItem', 'el.form.change', val);
+          this.dispatch('ytFormItem', 'yt.form.change', val);
         }
       },
 
@@ -477,7 +477,7 @@
           this.remoteMethod(val);
         } else if (typeof this.filterMethod === 'function') {
           this.filterMethod(val);
-          this.broadcast('ElOptionGroup', 'queryChange');
+          this.broadcast('ytOptionGroup', 'queryChange');
         } else {
           this.filteredOptionsCount = this.optionsCount;
           this.broadcast('ytOption', 'queryChange', val);

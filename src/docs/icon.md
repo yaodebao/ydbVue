@@ -67,7 +67,7 @@
 # Icon 图标
 
 ----
-```YT-UI``` 使用开源的阿里 Iconfont 作为图标库，并制作成了 ```icon font```。
+```yitong-UI``` 使用开源的阿里 Iconfont 作为图标库，并制作成了 ```icon font```。
 
 
 ### 使用

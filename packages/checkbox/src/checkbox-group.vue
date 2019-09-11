@@ -9,7 +9,7 @@
     mixins: [Emitter],
 
     inject: {
-      elFormItem: {
+      ytFormItem: {
         default: ''
       }
     },
@@ -26,7 +26,7 @@
 
     computed: {
       _elFormItemSize() {
-        return (this.elFormItem || {}).elFormItemSize;
+        return (this.ytFormItem || {}).ytFormItemSize;
       },
       checkboxGroupSize() {
         return this.size || this._elFormItemSize || (this.$ELEMENT || {}).size;
@@ -35,7 +35,7 @@
 
     watch: {
       value(value) {
-        this.dispatch('ytFormItem', 'el.form.change', [value]);
+        this.dispatch('ytFormItem', 'yt.form.change', [value]);
       }
     }
   };

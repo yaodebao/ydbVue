@@ -8,7 +8,7 @@
     "build": "gulp build"
   },
   "keywords": [
-    "YT-ui",
+    "yitong-ui",
     "theme"
   ],
   "devDependencies": {

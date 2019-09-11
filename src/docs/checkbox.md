@@ -231,7 +231,7 @@
 
 按钮样式的多选组合。
 
-- 只需要把`yt-checkbox`元素替换为`yt-checkbox-button`元素即可。此外，Element 还提供了`size`属性。
+- 只需要把`yt-checkbox`元素替换为`yt-checkbox-button`元素即可。此外，yitong-ui 还提供了`size`属性。
 
 <div class="demo-block">
   <div>

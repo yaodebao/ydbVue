@@ -124,10 +124,10 @@
     inheritAttrs: false,
 
     inject: {
-      elForm: {
+      ytForm: {
         default: ''
       },
-      elFormItem: {
+      ytFormItem: {
         default: ''
       }
     },
@@ -194,13 +194,13 @@
 
     computed: {
       _elFormItemSize() {
-        return (this.elFormItem || {}).elFormItemSize;
+        return (this.ytFormItem || {}).ytFormItemSize;
       },
       validateState() {
-        return this.elFormItem ? this.elFormItem.validateState : '';
+        return this.ytFormItem ? this.ytFormItem.validateState : '';
       },
       needStatusIcon() {
-        return this.elForm ? this.elForm.statusIcon : false;
+        return this.ytForm ? this.ytForm.statusIcon : false;
       },
       validateIcon() {
         return {
@@ -216,7 +216,7 @@
         return this.size || this._elFormItemSize || (this.$ELEMENT || {}).size;
       },
       inputDisabled() {
-        return this.disabled || (this.elForm || {}).disabled;
+        return this.disabled || (this.ytForm || {}).disabled;
       },
       nativeInputValue() {
         return this.value === null || this.value === undefined ? '' : String(this.value);
@@ -263,7 +263,7 @@
       value(val) {
         this.$nextTick(this.resizeTextarea);
         if (this.validateEvent) {
-          this.dispatch('ElFormItem', 'el.form.change', [val]);
+          this.dispatch('ytFormItem', 'yt.form.change', [val]);
         }
       },
       // native input value is set explicitly
@@ -306,7 +306,7 @@
         this.focused = false;
         this.$emit('blur', event);
         if (this.validateEvent) {
-          this.dispatch('ElFormItem', 'el.form.blur', [this.value]);
+          this.dispatch('ytFormItem', 'yt.form.blur', [this.value]);
         }
       },
       select() {

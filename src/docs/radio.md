@@ -120,7 +120,7 @@
 
 按钮样式的单选组合。
 
-- 只需要把`yt-radio`元素换成`yt-radio-button`元素即可，此外，YT-ui 还提供了`size`属性。
+- 只需要把`yt-radio`元素换成`yt-radio-button`元素即可，此外，yitong-ui 还提供了`size`属性。
 <div class="demo-block">
     <div>
     <yt-radio-group v-model="radio4">

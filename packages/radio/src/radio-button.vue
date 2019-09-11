@@ -43,10 +43,10 @@
     mixins: [Emitter],
 
     inject: {
-      elForm: {
+      ytForm: {
         default: ''
       },
-      elFormItem: {
+      ytFormItem: {
         default: ''
       }
     },
@@ -90,13 +90,13 @@
         };
       },
       _elFormItemSize() {
-        return (this.elFormItem || {}).elFormItemSize;
+        return (this.ytFormItem || {}).ytFormItemSize;
       },
       size() {
         return this._radioGroup.radioGroupSize || this._elFormItemSize || (this.$ELEMENT || {}).size;
       },
       isDisabled() {
-        return this.disabled || this._radioGroup.disabled || (this.elForm || {}).disabled;
+        return this.disabled || this._radioGroup.disabled || (this.ytForm || {}).disabled;
       },
       tabIndex() {
         return (this.isDisabled || (this._radioGroup && this.value !== this.label)) ? -1 : 0;

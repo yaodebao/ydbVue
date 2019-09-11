@@ -82,7 +82,7 @@
         position: relative;
         padding: 6px 24px 6px 16px;
         color: #616367;
-        font-size: 15px;
+        font-size: 14px;
       }
         
       .active, a:hover{

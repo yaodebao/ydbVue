@@ -1,7 +1,7 @@
-# YT-ui 
+# yitong-ui 
 
- `YT-ui` 是一款基于 `Vue` ，参考了```element-ui``` 、`ant-design`。
-- `在线演示：` [YT-ui](https:///)
+ `yitong-ui` 是一款基于 `Vue` ，参考了```element-ui``` 、`ant-design`。
+- `在线演示：` [yitong-ui](https:///)
 
 ### 由来
 
@@ -12,7 +12,7 @@
 ### 安装
 
 ```bash
-npm i YT-ui --save
+npm i yitong-ui --save
 ```
 
 ### 使用
@@ -22,8 +22,8 @@ npm i YT-ui --save
 可以在项目的入口文件中引入所有组件或所需组件
 
 ```js
-import YTUI from 'YT-ui' // 引入组件库
-import 'YT-ui/packages/theme-set/lib/index.css' // 引入样式库
+import YTUI from 'yitong-ui' // 引入组件库
+import 'yitong-ui/packages/theme-set/lib/index.css' // 引入样式库
 
 Vue.use(YTUI)
 ```
@@ -38,9 +38,9 @@ Vue.use(YTUI)
 
 #### 自定义主题
 
-`UI` 基于stylus,可修改 `YT-ui/packages/theme-set/common/var.css` 文件自定义主题
+`UI` 基于stylus,可修改 `yitong-ui/packages/theme-set/common/var.css` 文件自定义主题
 
 
 ### 问题
 
-在使用 `YT-ui` 时遇到问题，或者有好的建议，欢迎提出来！skr，skr，O(∩_∩)O~
+在使用 `yitong-ui` 时遇到问题，或者有好的建议，欢迎提出来！skr，skr，O(∩_∩)O~

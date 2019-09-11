@@ -62,10 +62,10 @@
     mixins: [Emitter],
 
     inject: {
-      elForm: {
+      ytForm: {
         default: ''
       },
-      elFormItem: {
+      ytFormItem: {
         default: ''
       }
     },
@@ -145,12 +145,12 @@
 
       isDisabled() {
         return this.isGroup
-          ? this._checkboxGroup.disabled || this.disabled || (this.elForm || {}).disabled || this.isLimitDisabled
-          : this.disabled || (this.elForm || {}).disabled;
+          ? this._checkboxGroup.disabled || this.disabled || (this.ytForm || {}).disabled || this.isLimitDisabled
+          : this.disabled || (this.ytForm || {}).disabled;
       },
 
       _elFormItemSize() {
-        return (this.elFormItem || {}).elFormItemSize;
+        return (this.ytFormItem || {}).ytFormItemSize;
       },
 
       checkboxSize() {
@@ -215,7 +215,7 @@
 
     watch: {
       value(value) {
-        this.dispatch('ytFormItem', 'el.form.change', value);
+        this.dispatch('ytFormItem', 'yt.form.change', value);
       }
     }
   };

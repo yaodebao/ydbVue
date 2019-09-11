@@ -1,0 +1,184 @@
+@import "mixins/mixins";
+@import "mixins/utils";
+@import "common/var";
+
+@include b(form) {
+  @include m(label-left) {
+    & .yt-form-item__label {
+      text-align: left;
+    }
+  }
+  @include m(label-top) {
+    & .yt-form-item__label {
+      float: none;
+      display: inline-block;
+      text-align: left;
+      padding: 0 0 10px 0;
+    }
+  }
+  @include m(inline) {
+    & .yt-form-item {
+      display: inline-block;
+      margin-right: 10px;
+      vertical-align: top;
+    }
+    & .yt-form-item__label {
+      float: none;
+      display: inline-block;
+    }
+    & .yt-form-item__content {
+      display: inline-block;
+      vertical-align: top;
+    }
+    &.yt-form--label-top .yt-form-item__content {
+      display: block;
+    }
+  }
+}
+@include b(form-item) {
+  margin-bottom: 22px;
+  @include utils-clearfix;
+
+  & .yt-form-item {
+    margin-bottom: 0;
+  }
+
+  & .yt-input__validateIcon {
+    display: none;
+  }
+
+  @include m(medium) {
+    .yt-form-item__label {
+      line-height: 36px;
+    }
+    .yt-form-item__content {
+      line-height: 36px;
+    }
+  }
+  @include m(small) {
+    .yt-form-item__label {
+      line-height: 32px;
+    }
+    .yt-form-item__content {
+      line-height: 32px;
+    }
+    &.yt-form-item {
+      margin-bottom: 18px;
+    }
+    .yt-form-item__error {
+      padding-top: 2px;
+    }
+  }
+  @include m(mini) {
+    .yt-form-item__label {
+      line-height: 28px;
+    }
+    .yt-form-item__content {
+      line-height: 28px;
+    }
+    &.yt-form-item {
+      margin-bottom: 18px;
+    }
+    .yt-form-item__error {
+      padding-top: 1px;
+    }
+  }
+
+  @include e(label-wrap) {
+    float: left;
+    .yt-form-item__label {
+      display: inline-block;
+      float: none;
+    }
+  }
+
+  @include e(label) {
+    text-align: right;
+    vertical-align: middle;
+    float: left;
+    font-size: $--form-label-font-size;
+    color: $--color-text-regular;
+    line-height: 40px;
+    padding: 0 12px 0 0;
+    box-sizing: border-box;
+  }
+  @include e(content) {
+    line-height: 40px;
+    position: relative;
+    font-size: 14px;
+    @include utils-clearfix;
+
+    .yt-input-group {
+      vertical-align: top;
+    }
+  }
+  @include e(error) {
+    color: $--color-danger;
+    font-size: 12px;
+    line-height: 1;
+    padding-top: 4px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    @include m(inline) {
+      position: relative;
+      top: auto;
+      left: auto;
+      display: inline-block;
+      margin-left: 10px;
+    }
+  }
+
+  @include when(required) {
+    @include pseudo('not(.is-no-asterisk)') {
+      & > .yt-form-item__label:before,
+      & .yt-form-item__label-wrap > .yt-form-item__label:before {
+        content: '*';
+        color: $--color-danger;
+        margin-right: 4px;
+      }
+    }
+  }
+
+  @include when(error) {
+    & .yt-input__inner,
+    & .yt-textarea__inner {
+      &, &:focus {
+        border-color: $--color-danger;
+      }
+    }
+    & .yt-input-group__append,
+    & .yt-input-group__prepend {
+      & .yt-input__inner {
+        border-color: transparent;
+      }
+    }
+    .yt-input__validateIcon {
+      color: $--color-danger;
+    }
+  }
+  @include when(success) {
+    & .yt-input__inner,
+    & .yt-textarea__inner {
+      &, &:focus {
+        border-color: $--color-success;
+      }
+    }
+    & .yt-input-group__append,
+    & .yt-input-group__prepend {
+      & .yt-input__inner {
+        border-color: transparent;
+      }
+    }
+    .yt-input__validateIcon {
+      color: $--color-success;
+    }
+  }
+
+  @include m(feedback) {
+    .yt-input__validateIcon {
+      display: inline-block;
+    }
+  }
+}

@@ -34,7 +34,7 @@ export default {
     width: calc(100% - 60px);
     height: calc(100% - 80px);
     .app-main-left{
-      min-width: 230px;
+      min-width: 288px;
       position: relative;
       overflow-y: auto;
       &::-webkit-scrollbar{

@@ -54,10 +54,10 @@
     name: 'ytInputNumber',
     mixins: [Focus('input')],
     inject: {
-      elForm: {
+      ytForm: {
         default: ''
       },
-      elFormItem: {
+      ytFormItem: {
         default: ''
       }
     },
@@ -162,13 +162,13 @@
         return this.controls && this.controlsPosition === 'right';
       },
       _elFormItemSize() {
-        return (this.elFormItem || {}).elFormItemSize;
+        return (this.ytFormItem || {}).ytFormItemSize;
       },
       inputNumberSize() {
         return this.size || this._elFormItemSize || (this.$ELEMENT || {}).size;
       },
       inputNumberDisabled() {
-        return this.disabled || (this.elForm || {}).disabled;
+        return this.disabled || (this.ytForm || {}).disabled;
       },
       displayValue() {
         if (this.userInput !== null) {

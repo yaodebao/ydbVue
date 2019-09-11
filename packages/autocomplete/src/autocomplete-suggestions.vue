@@ -20,10 +20,10 @@
 <script>
   import Popper from '../../../YTJS/utils/vue-popper';
   import Emitter from '../../../YTJS/mixins/emitter';
-  import ElScrollbar from '../../scrollbar';
+  import ytScrollbar from '../../scrollbar';
 
   export default {
-    components: { ElScrollbar },
+    components: { ytScrollbar },
     mixins: [Popper, Emitter],
 
     componentName: 'ytAutocompleteSuggestions',

@@ -1,8 +1,8 @@
-import ElCarouselItem from '../carousel/src/item';
+import ytCarouselItem from '../carousel/src/item';
 
 /* istanbul ignore next */
-ElCarouselItem.install = function(Vue) {
-  Vue.component(ElCarouselItem.name, ElCarouselItem);
+ytCarouselItem.install = function(Vue) {
+  Vue.component(ytCarouselItem.name, ytCarouselItem);
 };
 
-export default ElCarouselItem;
+export default ytCarouselItem;

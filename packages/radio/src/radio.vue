@@ -51,16 +51,16 @@
     mixins: [Emitter],
 
     inject: {
-      elForm: {
+      ytForm: {
         default: ''
       },
 
-      elFormItem: {
+      ytFormItem: {
         default: ''
       }
     },
 
-    componentName: 'ElRadio',
+    componentName: 'ytRadio',
 
     props: {
       value: {},
@@ -103,7 +103,7 @@
         }
       },
       _elFormItemSize() {
-        return (this.elFormItem || {}).elFormItemSize;
+        return (this.ytFormItem || {}).ytFormItemSize;
       },
       radioSize() {
         const temRadioSize = this.size || this._elFormItemSize || (this.$ELEMENT || {}).size;
@@ -113,8 +113,8 @@
       },
       isDisabled() {
         return this.isGroup
-          ? this._radioGroup.disabled || this.disabled || (this.elForm || {}).disabled
-          : this.disabled || (this.elForm || {}).disabled;
+          ? this._radioGroup.disabled || this.disabled || (this.ytForm || {}).disabled
+          : this.disabled || (this.ytForm || {}).disabled;
       },
       tabIndex() {
         return (this.isDisabled || (this.isGroup && this.model !== this.label)) ? -1 : 0;
